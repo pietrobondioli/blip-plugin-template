@@ -30,9 +30,13 @@
   "dependencies": {
     "@heroicons/react": "2.0.18",
     "blip-ds": "^1.266.4",
+    "i18next": "^23.6.0",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.2",
     "iframe-message-proxy": "^1.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^13.3.1",
     "react-router-dom": "6.17.0",
     "resize-observer": "^1.0.4",
     "tilg": "0.1.1",

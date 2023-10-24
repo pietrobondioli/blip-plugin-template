@@ -1,13 +1,15 @@
 import production from "./appsettings.json";
 import settingsSchema from "./types";
 
-let settings;
+let rawSettings;
 
 try {
   const dev = await import("./appsettings.development.json");
-  settings = import.meta.env.NODE_ENV !== "development" ? production : dev;
+  rawSettings = import.meta.env.NODE_ENV !== "development" ? production : dev;
 } catch {
-  settings = production;
+  rawSettings = production;
 }
 
-export default settingsSchema.parse(settings);
+const settings = settingsSchema.parse(rawSettings);
+
+export default settings;
