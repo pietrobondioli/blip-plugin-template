@@ -1,6 +1,7 @@
 import App from "@/App";
 import "@/global";
 import routes from "@/routes";
+import { defineCustomElements } from "blip-ds/loader";
 import { IframeMessageProxy } from "iframe-message-proxy";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -18,6 +19,9 @@ const observer = new ResizeObserver(() => {
   setHeight(container.scrollHeight);
 });
 observer.observe(container);
+
+// Blip-DS Web Component
+defineCustomElements(window);
 
 // handle communication through browser post messages
 IframeMessageProxy.listen();
