@@ -133,3 +133,5 @@ dist
 .wireit
 
 .turbo
+
+appsettings.development.json

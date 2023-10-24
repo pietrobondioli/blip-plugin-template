@@ -1,17 +1,17 @@
 {
   "name": "blip-plugin-template",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite --host",
     "build": "tsc && vite build",
-    "test": "vitest",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "dev": "vite --host",
     "postinstall": "husky install",
-    "prepare": "is-ci || husky install"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prepare": "is-ci || husky install",
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "lint-staged": {
     "*.{ts,tsx,js,cjs}": [
@@ -25,16 +25,13 @@
     "not dead",
     "not IE 11"
   ],
-  "engines": {
-    "node": ">=14",
-    "yarn": ">=1.22.5"
-  },
   "dependencies": {
     "@heroicons/react": "2.0.18",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.17.0",
-    "tilg": "0.1.1"
+    "tilg": "0.1.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@commitlint/cli": "17.4.2",
@@ -71,5 +68,9 @@
     "vite-plugin-mkcert": "1.16.0",
     "vite-tsconfig-paths": "4.2.1",
     "vitest": "^0.34.5"
+  },
+  "engines": {
+    "node": ">=14",
+    "yarn": ">=1.22.5"
   }
 }
