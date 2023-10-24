@@ -1,12 +1,15 @@
-import App from "@/App";
-import "@/global";
-import routes from "@/routes";
 import { defineCustomElements } from "blip-ds/loader";
 import { IframeMessageProxy } from "iframe-message-proxy";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ResizeObserver } from "resize-observer";
+
+import App from "@/App";
+import routes from "@/routes";
+
+import "@/global";
+
 import TrackingEvents from "./constants/tracking-events";
 import reportWebVitals from "./reportWebVitals";
 import { track } from "./services/analytics-service";

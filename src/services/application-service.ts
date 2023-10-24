@@ -1,5 +1,6 @@
-import IMP from "@/constants/iframe-message-proxy";
 import { IframeMessageProxy } from "iframe-message-proxy";
+
+import IMP from "@/constants/iframe-message-proxy";
 
 const PORTAL_RECIPIENT = "postmaster@portal.blip.ai";
 const APPLICATIONS_PATH = `/applications`;

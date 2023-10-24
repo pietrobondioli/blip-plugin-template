@@ -1,7 +1,7 @@
-import IMP from "@/constants/iframe-message-proxy";
 import { IframeMessageProxy } from "iframe-message-proxy";
 
 import settings from "@/config";
+import IMP from "@/constants/iframe-message-proxy";
 
 const PERMISSION_TYPE = "write";
 const PERMISSION_AREA = "team";

@@ -1,5 +1,6 @@
-import IMP from "@/constants/iframe-message-proxy";
 import { IframeMessageProxy } from "iframe-message-proxy";
+
+import IMP from "@/constants/iframe-message-proxy";
 
 interface ShowToastProps {
   type: string;

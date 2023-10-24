@@ -1,8 +1,9 @@
-import IMP from "@/constants/iframe-message-proxy";
 import { IframeMessageProxy } from "iframe-message-proxy";
 
 import settings from "@/config";
+import IMP from "@/constants/iframe-message-proxy";
 import { toKebabCase } from "@/utils/string";
+
 import { ICreateTrack, IPage, ITrack } from "./analytics-types";
 
 const TRACK_METHOD = "createApplicationTrack";
